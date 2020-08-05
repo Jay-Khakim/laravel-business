@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Auth::resource('listings', 'ListingsController');
+Route::resource('listings', 'ListingsController');
 
 Route::get('/home', 'HomeController@index')->name('home');
